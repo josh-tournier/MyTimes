@@ -1,13 +1,29 @@
 /* Universal Rules */
 
-div {
-  border: 1px solid black;
-}
-
 p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h4 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav span {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 20px 10px;
+}
+
+a {
+  color: Black;
 }
 
 /* Header Rules */
@@ -28,6 +44,11 @@ header {
   background-color: white;
 }
 
+
+header nav {
+  padding-right: 40px;
+}
+
 .logo {
   display: flex;
   flex-grow: 1;
@@ -42,30 +63,18 @@ header {
   height: 60px;
 }
 
-nav {
-  padding-right: 40px;
-}
-
-nav span {
-  display: inline-block;
-  text-decoration: underline;
-  padding: 10px 10px;
-}
-
-a {
-  color: Black;
-}
-
 /* Main Content Rules */
 
 content {
   display: flex;
-  margin-top: 80px;
+  justify-content: space-between;
+  margin: 80px auto;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
 }
 
 .column.left {
@@ -78,9 +87,13 @@ content {
 
 .column.right {
   width: 240px;
+  text-align: center;
 }
 
 .image-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -92,8 +105,9 @@ content {
 
 /* Left Column Rules */
 
-.tuna-concert {
-  background-color: Cyan;
+.sub-stories {
+  display: flex;
+  justify-content: space-between;
 }
 
 .tuna-concert .image-content {
@@ -104,31 +118,24 @@ content {
   background-image: url(../images/champagne-main.png);
 }
 
-.orca-sub {
-  background-color: SaddleBrown;
-}
-
 .autumn.image-content {
   background-image: url(../images/autumn-trees.png);
-}
-
-.burger-sub {
-  background-color: Yellow;
 }
 
 .cameraman.image-content {
   background-image: url(../images/cameraman.png);
 }
 
+.orca-sub {
+  width: 300px;
+}
+
+.burger-sub {
+  width: 300px;
+}
+
+
 /* Middle Column Rules */
-
-.fbi-sub {
-  background-color: Lime;
-}
-
-.cat-sub {
-  background-color: DodgerBlue;
-}
 
 .cat.image-content {
   background-image: url(../images/cat-ceo.png);
@@ -137,5 +144,51 @@ content {
 /* Right Column Rules */
 
 .news-bites {
-  background-color: Magenta;
+  display: flex;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  text-align: left;
+}
+
+.bite {
+  margin: 0;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+}
+
+/* Footer Rules */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 325px;
+  margin: auto;
+  background-color: MediumAquamarine;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer nav {
+  padding-left: 25px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: 2px solid white;
 }

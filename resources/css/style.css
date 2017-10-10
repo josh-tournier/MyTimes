@@ -1,6 +1,8 @@
 /* Universal Rules */
 
-
+div {
+  border: 1px solid black;
+}
 
 
 
@@ -18,6 +20,7 @@ header {
   border-bottom: 1px solid black;
   position: fixed;
   z-index: 1;
+  top: 0px;
 }
 
 .logo {
@@ -49,3 +52,55 @@ a {
 }
 
 /* Main Content Rules */
+
+content {
+  display: flex;
+  margin-top: 80px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.left {
+  width: 630px;
+}
+
+.column.middle {
+  width: 300px;
+}
+
+.column.right {
+  width: 240px;
+}
+
+/* Left Column Rules */
+
+.tuna-concert {
+  background-color: Cyan;
+}
+
+.orca-sub {
+  background-color: SaddleBrown;
+}
+
+.burger-sub {
+  background-color: Yellow;
+}
+
+/* Middle Column Rules */
+
+.fbi-sub {
+  background-color: Lime;
+}
+
+.cat-sub {
+  background-color: DodgerBlue;
+}
+
+/* Right Column Rules */
+
+.news-bites {
+  background-color: Magenta;
+}

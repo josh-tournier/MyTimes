@@ -4,7 +4,11 @@ div {
   border: 1px solid black;
 }
 
-
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
 
 /* Header Rules */
 
@@ -21,6 +25,7 @@ header {
   position: fixed;
   z-index: 1;
   top: 0px;
+  background-color: white;
 }
 
 .logo {
@@ -75,18 +80,44 @@ content {
   width: 240px;
 }
 
+.image-content {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
 /* Left Column Rules */
 
 .tuna-concert {
   background-color: Cyan;
 }
 
+.tuna-concert .image-content {
+  font-size: 40px;
+}
+
+.tuna.image-content {
+  background-image: url(../images/champagne-main.png);
+}
+
 .orca-sub {
   background-color: SaddleBrown;
 }
 
+.autumn.image-content {
+  background-image: url(../images/autumn-trees.png);
+}
+
 .burger-sub {
   background-color: Yellow;
+}
+
+.cameraman.image-content {
+  background-image: url(../images/cameraman.png);
 }
 
 /* Middle Column Rules */
@@ -97,6 +128,10 @@ content {
 
 .cat-sub {
   background-color: DodgerBlue;
+}
+
+.cat.image-content {
+  background-image: url(../images/cat-ceo.png);
 }
 
 /* Right Column Rules */
